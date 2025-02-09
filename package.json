@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "node-cache": "^5.1.2"
+  },
   "devDependencies": {
     "typescript": "^5.5.3"
   },
