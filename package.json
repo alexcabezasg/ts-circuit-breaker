@@ -1,11 +1,12 @@
 {
-  "name": "@alexcabezas0/cb-js",
-  "version": "1.0.3",
+  "name": "@alexcabezas0/circuit-breaker",
+  "version": "1.0.0",
   "description": "A simple implementation of a CircuitBreaker to ensure a healthy status of your application",
-  "main": "dist/CircuitBreaker.js",
-  "types": "types/types.d.ts",
+  "main": "./dist/CircuitBreaker.js",
+  "module": "./dist/CircuitBreaker.mjs",
+  "types": "./dist/CircuitBreaker.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsup"
   },
   "files": [
     "dist"
@@ -14,7 +15,8 @@
     "node-cache": "^5.1.2"
   },
   "devDependencies": {
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "tsup": "^8.3.6"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,7 @@
     "typscript"
   ],
   "author": "Alex Cabezas",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/alexcabezasg/ts-circuit-breaker/issues"
   },
