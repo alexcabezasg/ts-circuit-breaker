@@ -1,16 +1,7 @@
-import {FuseConfig, FuseConfigRepository} from "./FuseConfig";
-import {FuseStatusRepository} from "./FuseStatus";
+import {FuseConfigRepository} from "./FuseConfigRepository";
+import {FuseStatusRepository} from "./FuseStatusRepository";
 import {Circuit} from "./Circuit";
-
-interface CircuitBreakerResponse {
-    status: CircuitBreakerResponseStatus;
-    response: any,
-}
-
-export enum CircuitBreakerResponseStatus {
-    SUCCESS = 0,
-    CIRCUIT_OPEN = 1
-}
+import {CircuitBreakerResponse, CircuitBreakerResponseStatus, FuseConfig} from "../types/types";
 
 export const CircuitBreaker = {
     installFuse: (fuse: string, config: FuseConfig) => {
@@ -37,7 +28,7 @@ export const CircuitBreaker = {
                 fuseStatus.melts = 0;
                 fuseStatus.isOpen = true;
                 Circuit.open(fuseName, fuseConfig.recovery_time_in_ms);
-                console.error(`Circuit open for fuse ${fuseName}`)
+                console.error(`Circuit open for fuse ${fuseName}`);
                 return {status: CircuitBreakerResponseStatus.CIRCUIT_OPEN, response: {error: "circuit open"}};
             }
         } else {

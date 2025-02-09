@@ -1,10 +1,5 @@
 import NodeCache from "node-cache";
-
-export interface FuseStatus {
-    isOpen: boolean;
-    melts: number;
-    asks: number;
-}
+import {FuseStatus} from "../types/types";
 
 const cache = new NodeCache({useClones: false});
 

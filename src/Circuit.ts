@@ -1,5 +1,5 @@
 import NodeCache from "node-cache";
-import {FuseStatusRepository} from "./FuseStatus";
+import {FuseStatusRepository} from "./FuseStatusRepository";
 
 const openCircuits = new NodeCache({checkperiod: 1});
 

@@ -1,10 +1,5 @@
 import NodeCache from "node-cache";
-
-export interface FuseConfig {
-    errors: number;
-    recovery_time_in_ms: number;
-    shouldMelt: Function;
-}
+import {FuseConfig} from "../types/types";
 
 const cache = new NodeCache({useClones: false});
 
