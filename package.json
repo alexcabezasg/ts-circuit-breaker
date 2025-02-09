@@ -1,12 +1,15 @@
 {
-  "name": "cb-js",
-  "version": "1.0.0",
+  "name": "@alexcabezas0/cb-js",
+  "version": "1.0.3",
   "description": "A simple implementation of a CircuitBreaker to ensure a healthy status of your application",
-  "main": "dist/index.js",
+  "main": "dist/CircuitBreaker.js",
   "types": "types/types.d.ts",
   "scripts": {
     "build": "tsc"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "node-cache": "^5.1.2"
   },

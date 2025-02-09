@@ -1,7 +1,7 @@
 import {FuseConfigRepository} from "./FuseConfigRepository";
 import {FuseStatusRepository} from "./FuseStatusRepository";
 import {Circuit} from "./Circuit";
-import {CircuitBreakerResponse, CircuitBreakerResponseStatus, FuseConfig} from "../types/types";
+import {CircuitBreakerResponse, CircuitBreakerResponseStatus, FuseConfig} from "./Types";
 
 export const CircuitBreaker = {
     installFuse: (fuse: string, config: FuseConfig) => {

@@ -10,7 +10,7 @@ export interface FuseStatus {
     asks: number;
 }
 
-interface CircuitBreakerResponse {
+export interface CircuitBreakerResponse {
     status: CircuitBreakerResponseStatus;
     response: any,
 }

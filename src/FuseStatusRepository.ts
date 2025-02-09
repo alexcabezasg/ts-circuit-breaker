@@ -1,5 +1,5 @@
 import NodeCache from "node-cache";
-import {FuseStatus} from "../types/types";
+import {FuseStatus} from "./Types";
 
 const cache = new NodeCache({useClones: false});
 
