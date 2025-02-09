@@ -8,8 +8,8 @@ interface CircuitBreakerResponse {
 }
 
 export enum CircuitBreakerResponseStatus {
-    CIRCUIT_OPEN = 0,
-    SUCCESS = 1,
+    SUCCESS = 0,
+    CIRCUIT_OPEN = 1
 }
 
 export const CircuitBreaker = {
